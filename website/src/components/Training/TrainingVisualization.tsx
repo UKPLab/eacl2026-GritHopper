@@ -289,20 +289,20 @@ function AblationTable() {
           <table className="w-full text-xs">
             <tbody>
               <tr className="bg-purple-50">
-                <td className="py-1.5 px-2">Answers + Reward</td>
+                <td className="py-1.5 px-2 text-purple-800">Answers + Reward</td>
                 <td className="text-right font-mono font-bold text-purple-700">82.32</td>
               </tr>
               <tr className="bg-green-50">
-                <td className="py-1.5 px-2">Answers Only</td>
+                <td className="py-1.5 px-2 text-green-800">Answers Only</td>
                 <td className="text-right font-mono font-bold text-green-700">82.08</td>
               </tr>
-              <tr>
-                <td className="py-1.5 px-2">No Post-Retrieval LM</td>
-                <td className="text-right font-mono">80.78</td>
+              <tr className="bg-gray-50">
+                <td className="py-1.5 px-2 text-gray-700">No Post-Retrieval LM</td>
+                <td className="text-right font-mono text-gray-700">80.78</td>
               </tr>
-              <tr>
-                <td className="py-1.5 px-2">Contrastive Only</td>
-                <td className="text-right font-mono">78.02</td>
+              <tr className="bg-blue-50">
+                <td className="py-1.5 px-2 text-blue-800">Contrastive Only</td>
+                <td className="text-right font-mono text-blue-700">78.02</td>
               </tr>
             </tbody>
           </table>
@@ -313,19 +313,19 @@ function AblationTable() {
           <div className="text-xs font-semibold text-gray-700 mb-2">Open Retrieval (avg. 2 seeds)</div>
           <table className="w-full text-xs">
             <thead>
-              <tr className="text-[10px] text-gray-500 border-b">
-                <th className="text-left py-1 px-1">Dataset</th>
-                <th className="text-right px-1">Ans+Rew</th>
-                <th className="text-right px-1">Ans</th>
-                <th className="text-right px-1">No Post</th>
+              <tr className="text-[10px] border-b">
+                <th className="text-left py-1 px-1 text-gray-500">Dataset</th>
+                <th className="text-right px-1 text-purple-600 bg-purple-50/50">Ans+Rew</th>
+                <th className="text-right px-1 text-green-600 bg-green-50/50">Ans</th>
+                <th className="text-right px-1 text-gray-600 bg-gray-50">No Post</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td className="py-1 px-1">MuSiQue</td><td className="text-right font-mono px-1">76.16</td><td className="text-right font-mono px-1">75.95</td><td className="text-right font-mono px-1">75.22</td></tr>
-              <tr><td className="py-1 px-1">ExFever</td><td className="text-right font-mono px-1">87.10</td><td className="text-right font-mono font-bold px-1">91.81</td><td className="text-right font-mono px-1">89.69</td></tr>
-              <tr><td className="py-1 px-1">HoVer</td><td className="text-right font-mono px-1">93.34</td><td className="text-right font-mono font-bold px-1">94.29</td><td className="text-right font-mono px-1">94.36</td></tr>
-              <tr className="border-t"><td className="py-1 px-1 text-purple-700">MultiHop-RAG</td><td className="text-right font-mono px-1">51.74</td><td className="text-right font-mono font-bold px-1">54.03</td><td className="text-right font-mono px-1">51.13</td></tr>
-              <tr><td className="py-1 px-1 text-purple-700">MoreHopQA</td><td className="text-right font-mono font-bold px-1">96.14</td><td className="text-right font-mono px-1">95.80</td><td className="text-right font-mono px-1">94.68</td></tr>
+              <tr><td className="py-1 px-1">MuSiQue</td><td className="text-right font-mono px-1 bg-purple-50/30">76.16</td><td className="text-right font-mono px-1 bg-green-50/30">75.95</td><td className="text-right font-mono px-1 bg-gray-50/50">75.22</td></tr>
+              <tr><td className="py-1 px-1">ExFever</td><td className="text-right font-mono px-1 bg-purple-50/30">87.10</td><td className="text-right font-mono font-bold px-1 bg-green-50/30">91.81</td><td className="text-right font-mono px-1 bg-gray-50/50">89.69</td></tr>
+              <tr><td className="py-1 px-1">HoVer</td><td className="text-right font-mono px-1 bg-purple-50/30">93.34</td><td className="text-right font-mono font-bold px-1 bg-green-50/30">94.29</td><td className="text-right font-mono px-1 bg-gray-50/50">94.36</td></tr>
+              <tr className="border-t"><td className="py-1 px-1 text-purple-700">MultiHop-RAG</td><td className="text-right font-mono px-1 bg-purple-50/30">51.74</td><td className="text-right font-mono font-bold px-1 bg-green-50/30">54.03</td><td className="text-right font-mono px-1 bg-gray-50/50">51.13</td></tr>
+              <tr><td className="py-1 px-1 text-purple-700">MoreHopQA</td><td className="text-right font-mono font-bold px-1 bg-purple-50/30">96.14</td><td className="text-right font-mono px-1 bg-green-50/30">95.80</td><td className="text-right font-mono px-1 bg-gray-50/50">94.68</td></tr>
             </tbody>
           </table>
         </div>
