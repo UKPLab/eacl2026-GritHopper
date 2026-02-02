@@ -94,7 +94,7 @@ export default function AnimationSection() {
               MDR <span className="text-gray-500">(Xiong et al., 2021)</span>
             </a>{" "}
             and{" "}
-            <a href="https://aclanthology.org/2024.naacl-long.404/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://aclanthology.org/2024.naacl-long.96/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
               BeamRetriever <span className="text-gray-500">(Zhang et al., 2024)</span>
             </a>.
             Unlike previous approaches that struggle with longer reasoning chains and out-of-distribution data,
