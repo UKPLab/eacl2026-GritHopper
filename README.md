@@ -14,7 +14,7 @@
       Multi-Hop Dense Retrieval</h1>
     </h1>
     <p align="center">
-    🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="https://arxiv.org/pdf/2503.07519" target="_blank">Paper</a>
+    🌐 <a href="https://ukplab.github.io/eacl2026-GritHopper/" target="_blank">Website</a> 🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="https://arxiv.org/pdf/2503.07519" target="_blank">Paper</a>
 </p>
   </div>
 </p>
