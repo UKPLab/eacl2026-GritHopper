@@ -92,7 +92,7 @@ export default function PerformanceGraph({
               formatter={(value) => value != null ? [`${Number(value).toFixed(1)}%`, ""] : ["", ""]}
             />
 
-            {/* Baseline lines */}
+            {/* Baseline lines - animation disabled to prevent re-animation on data changes */}
             {performanceData.filter((m) => !m.isMain).map((model) => (
               <Line
                 key={model.name}
@@ -104,10 +104,11 @@ export default function PerformanceGraph({
                 dot={{ r: 3, fill: model.color, fillOpacity: 0.45, strokeWidth: 0 }}
                 activeDot={{ r: 5, strokeWidth: 2, stroke: "#fff" }}
                 name={model.displayName}
+                isAnimationActive={false}
               />
             ))}
 
-            {/* GritHopper dashed preview */}
+            {/* GritHopper dashed preview - animation disabled */}
             {performanceData.filter((m) => m.isMain).map((model) => (
               <Line
                 key={`${model.name}-bg`}
@@ -121,6 +122,7 @@ export default function PerformanceGraph({
                 activeDot={false}
                 name=""
                 legendType="none"
+                isAnimationActive={false}
               />
             ))}
 
