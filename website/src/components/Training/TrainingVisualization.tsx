@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { getAssetPath } from "@/config";
 
 // Token component
 function Token({ text, color, animate = false, delay = 0 }: {
@@ -45,7 +46,7 @@ function MiniGritHopperBlock() {
     <div className="flex items-center gap-2 px-2 py-1.5 bg-white rounded-lg border border-gray-200 shadow-sm">
       <div className="w-6 h-6 rounded overflow-hidden">
         <Image
-          src="/logos/grithopper-logo.jpeg"
+          src={getAssetPath("/logos/grithopper-logo.jpeg")}
           alt="GritHopper"
           width={24}
           height={24}

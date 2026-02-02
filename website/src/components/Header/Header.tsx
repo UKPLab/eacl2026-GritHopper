@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Github } from "lucide-react";
+import { getAssetPath } from "@/config";
 
 const authors = [
   { name: "Justus-Jonas Erker", affiliation: "1", url: "https://erker.ai" },
@@ -58,7 +59,7 @@ export default function Header() {
           className="mb-8"
         >
           <Image
-            src="/logos/grithopper-logo.jpeg"
+            src={getAssetPath("/logos/grithopper-logo.jpeg")}
             alt="GritHopper Mascot"
             width={200}
             height={200}
@@ -105,7 +106,7 @@ export default function Header() {
             <sup className="text-blue-600 text-sm font-medium">1</sup>
             <div className="flex items-center gap-3">
               <Image
-                src="/logos/ukp-logo.png"
+                src={getAssetPath("/logos/ukp-logo.png")}
                 alt="UKP Lab"
                 width={180}
                 height={60}
@@ -119,7 +120,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <sup className="text-blue-600 text-sm font-medium">2</sup>
             <Image
-              src="/logos/cohere-full.svg"
+              src={getAssetPath("/logos/cohere-full.svg")}
               alt="Cohere"
               width={360}
               height={100}
@@ -143,7 +144,7 @@ export default function Header() {
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-50 border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-200"
           >
             <Image
-              src="/logos/hf-logo.png"
+              src={getAssetPath("/logos/hf-logo.png")}
               alt="HuggingFace"
               width={24}
               height={24}
