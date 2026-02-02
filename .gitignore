@@ -137,3 +137,10 @@ dmypy.json
 # Project files
 sketch*
 grithopper/sketch*
+
+# Website build artifacts
+website/node_modules/
+website/.next/
+website/out/
+website/*.tsbuildinfo
+.DS_Store
