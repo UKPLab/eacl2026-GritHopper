@@ -123,10 +123,10 @@ export default function AnimationSection() {
           {/* LEFT: Animation Stage */}
           <div className="bg-gray-50/50 rounded-2xl border border-gray-100 p-4 md:p-5">
 
-            {/* Row 1: Expanding Context + Arrow + GritHopper */}
+            {/* Row 1: Expanding Query + Arrow + GritHopper */}
             <div className="grid grid-cols-[150px_auto_1fr] gap-4 items-start mb-4">
 
-              {/* Stage 1: Input / Expanding Context */}
+              {/* Stage 1: Input / Expanding Query */}
               <div className="relative" ref={contextRef}>
                 <div className="text-xs text-gray-500 font-medium flex items-center gap-1.5 mb-2">
                   <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">1</div>
@@ -139,10 +139,10 @@ export default function AnimationSection() {
                         animate={{ opacity: 1 }}
                         className="text-green-600 font-semibold"
                       >
-                        Expanding Context
+                        Expanding Query
                       </motion.span>
                     ) : (
-                      "Expanding Context"
+                      "Expanding Query"
                     )}
                   </span>
                 </div>
