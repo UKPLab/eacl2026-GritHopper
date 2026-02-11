@@ -110,7 +110,7 @@ export default function AnimationSection() {
           className="text-center mb-4"
         >
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
-            How Decomposition-Free Retrieval Works
+            How Multi-Hop Dense Retrieval Works
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-xs md:text-sm">
             Watch GRITHopper recursively retrieve documents by expanding context with each hop.
