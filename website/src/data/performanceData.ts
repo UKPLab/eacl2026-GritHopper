@@ -22,7 +22,7 @@ export const performanceData: ModelData[] = [
   },
   {
     name: "beamretriever",
-    displayName: "BeamRetriever (Zhang et al., NAACL 2024)",
+    displayName: "BeamRetriever (Zhang et al., 2024)",
     color: "#ec4899",
     data: [43.24, 13.13, 5.95, 2.76],
   },
